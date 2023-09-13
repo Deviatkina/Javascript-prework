@@ -14,3 +14,12 @@ else(playerInput == '3'){
     playerMove = 'nożyce';
   }
 printMessage('Twój ruch to: ' + playerMove);
+
+let computerMove = 'kamień';
+printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
+
+else if computerMove = 'papier';
+printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to nożyce, to wygrywasz!');
+
+else computerMove = 'nożyce';
+printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to kamień, to wygrywasz!');
