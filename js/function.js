@@ -10,7 +10,7 @@ if(playerInput == '1'){
 else if(playerInput == '2'){
     playerMove = 'papier';
   }
-else(playerInput == '3'){
+else (playerInput == '3'){
     playerMove = 'nożyce';
   }
 printMessage('Twój ruch to: ' + playerMove);
@@ -23,3 +23,22 @@ printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to nożyce, to w
 
 else computerMove = 'nożyce';
 printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to kamień, to wygrywasz!');
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
+else if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+  }
+else if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+}
+else if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Wygrywa Komputer!');
+}
+else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Wygrywa Komputer!');
+}
+else if( computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Wygrywa Komputer!');
+}
