@@ -42,3 +42,12 @@ else if( computerMove == 'papier' && playerMove == 'kamień'){
 else if( computerMove == 'nożyce' && playerMove == 'papier'){
     printMessage('Wygrywa Komputer!');
 }
+else if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Remis!');
+}
+else if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Remis!');
+}
+else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Remis!');
+}
