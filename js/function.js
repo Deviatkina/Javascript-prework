@@ -30,7 +30,7 @@ if (randomNumber == 3) {
     computerMove = 'nożyce';
 }
 //result
-function displayResult (computerMove){
+
 if (computerMove == 'kamień' && playerMove == 'papier') {
     printMessage('Ty wygrywasz!');
 }
@@ -57,4 +57,4 @@ else if (computerMove == 'papier' && playerMove == 'papier') {
 }
 else (computerMove == 'nożyce' && playerMove == 'nożyce')
 printMessage('Remis!');
-}
+
