@@ -10,10 +10,17 @@ if(playerInput == '1'){
 else if(playerInput == '2'){
     playerMove = 'papier';
   }
-else (playerInput == '3'){
+else if(playerInput == '3'){
     playerMove = 'nożyce';
   }
 printMessage('Twój ruch to: ' + playerMove);
+
+let playerMove = 'nieznany ruch';
+
+if(playerInput >'3'){
+    playerMove = 'nieznany ruch';
+}
+printMessage('Trzeba wybrać liczbe od 1 do 3!');
 
 let computerMove = 'kamień';
 printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
@@ -48,6 +55,6 @@ else if( computerMove == 'kamień' && playerMove == 'kamień'){
 else if( computerMove == 'papier' && playerMove == 'papier'){
     printMessage('Remis!');
 }
-else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+else ( computerMove == 'nożyce' && playerMove == 'nożyce'){
     printMessage('Remis!');
 }
