@@ -8,15 +8,12 @@ let playerMove = 'Nieznany ruch';
 
 if (playerInput == '1') {
     playerMove = 'kamień';
-    printMessage ('Twój ruch to ' + playerMove + '!');
 } 
 else if (playerInput == '2') {
     playerMove = 'papier';
-    printMessage ('Twój ruch to ' + playerMove + '!');
 }
 else if (playerInput == '3') {
     playerMove = 'nożyce';
-    printMessage ('Twój ruch to ' + playerMove + '!');
 }
 else {
     printMessage (playerMove + '!');
@@ -29,19 +26,18 @@ console.log('Wylosowana liczba to:' + randomNumber);
 let computerMove = 'nieznany ruch';
 if (randomNumber == 1) {
     computerMove = 'kamień';
-    printMessage ('Ruch computera to ' + computerMove + '!');
 }
 if (randomNumber == 2) {
     computerMove = 'papier';
-    printMessage ('Ruch computera to ' + computerMove + '!');
 }
 if (randomNumber == 3) {
     computerMove = 'nożyce';
-    printMessage ('Ruch computera to ' + computerMove + '!');
 }
 //result
+function displayResult ( computerMove, playerMove){
+    printMessage ('Zagrałem ' + computerMove + ', a Ty ' + playerMove + '!');
 
-if (computerMove == 'kamień' && playerMove == 'papier') {
+    if (computerMove == 'kamień' && playerMove == 'papier') {
     printMessage('Ty wygrywasz!');
 }
 else if (computerMove == 'papier' && playerMove == 'nożyce') {
@@ -51,14 +47,21 @@ else if (computerMove == 'nożyce' && playerMove == 'kamień') {
     printMessage('Ty wygrywasz!');
 }
 else if (computerMove == 'kamień' && playerMove == 'nożyce') {
-    printMessage('Wygrywa Komputer!');
+    printMessage('Tym razem przegrywasz :(!');
 }
 else if (computerMove == 'papier' && playerMove == 'kamień') {
-    printMessage('Wygrywa Komputer!');
+    printMessage('Tym razem przegrywasz :(!');
 }
 else if (computerMove == 'nożyce' && playerMove == 'papier') {
-    printMessage('Wygrywa Komputer!');
+    printMessage('Tym razem przegrywasz :(!');
 }
-else {
+else if (computerMove == 'kamień' && playerMove == 'kamień') {
     printMessage('Remis!');
+}
+else if (computerMove == 'papier' && playerMove == 'papier') {
+    printMessage('Remis!');
+}
+else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
+    printMessage('Remis!');
+} else printMessage ('Nie dokonałeś wyboru!')
 }
