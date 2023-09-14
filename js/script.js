@@ -1,18 +1,22 @@
 //player input
+
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
 console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = 'nieznany ruch';
+let playerMove = 'Nieznany ruch';
 
 if (playerInput == '1') {
     playerMove = 'kamień';
-}
+} 
 else if (playerInput == '2') {
     playerMove = 'papier';
 }
 else if (playerInput == '3') {
     playerMove = 'nożyce';
+}
+else {
+    printMessage (playerMove + '!');
 }
 //computer move
 let randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -49,12 +53,6 @@ else if (computerMove == 'papier' && playerMove == 'kamień') {
 else if (computerMove == 'nożyce' && playerMove == 'papier') {
     printMessage('Wygrywa Komputer!');
 }
-else if (computerMove == 'kamień' && playerMove == 'kamień') {
+else {
     printMessage('Remis!');
 }
-else if (computerMove == 'papier' && playerMove == 'papier') {
-    printMessage('Remis!');
-}
-else (computerMove == 'nożyce' && playerMove == 'nożyce')
-printMessage('Remis!');
-
