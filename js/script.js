@@ -8,12 +8,15 @@ let playerMove = 'Nieznany ruch';
 
 if (playerInput == '1') {
     playerMove = 'kamień';
+    printMessage ('Twój ruch to ' + playerMove + '!');
 } 
 else if (playerInput == '2') {
     playerMove = 'papier';
+    printMessage ('Twój ruch to ' + playerMove + '!');
 }
 else if (playerInput == '3') {
     playerMove = 'nożyce';
+    printMessage ('Twój ruch to ' + playerMove + '!');
 }
 else {
     printMessage (playerMove + '!');
