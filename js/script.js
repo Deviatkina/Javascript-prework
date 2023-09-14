@@ -34,7 +34,7 @@ if (randomNumber == 3) {
     computerMove = 'nożyce';
 }
 //result
- 
+function displayResult (computerMove, playerMove){
     printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
 
 if (computerMove == 'kamień' && playerMove == 'papier') {
@@ -64,4 +64,5 @@ else if (computerMove == 'papier' && playerMove == 'papier') {
 else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
     printMessage('Remis!');
 } else printMessage ('Nie dokonałeś właściwego wyboru!')
-
+}
+displayResult(computerMove, playerMove);
