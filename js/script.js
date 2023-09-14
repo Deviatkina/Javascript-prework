@@ -34,8 +34,10 @@ if (randomNumber == 3) {
     computerMove = 'nożyce';
 }
 //result
+ 
+    printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
 
-    if (computerMove == 'kamień' && playerMove == 'papier') {
+if (computerMove == 'kamień' && playerMove == 'papier') {
     printMessage('Ty wygrywasz!');
 }
 else if (computerMove == 'papier' && playerMove == 'nożyce') {
@@ -61,5 +63,5 @@ else if (computerMove == 'papier' && playerMove == 'papier') {
 }
 else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
     printMessage('Remis!');
-} else printMessage ('Nie dokonałeś wyboru!')
+} else printMessage ('Nie dokonałeś właściwego wyboru!')
 
