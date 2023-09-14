@@ -29,12 +29,15 @@ console.log('Wylosowana liczba to:' + randomNumber);
 let computerMove = 'nieznany ruch';
 if (randomNumber == 1) {
     computerMove = 'kamień';
+    printMessage ('Ruch computera to ' + computerMove + '!');
 }
 if (randomNumber == 2) {
     computerMove = 'papier';
+    printMessage ('Ruch computera to ' + computerMove + '!');
 }
 if (randomNumber == 3) {
     computerMove = 'nożyce';
+    printMessage ('Ruch computera to ' + computerMove + '!');
 }
 //result
 
