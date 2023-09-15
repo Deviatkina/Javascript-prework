@@ -1,28 +1,10 @@
 //start game
 function playGame(playerChoice) {
-    let playerMove = getPlayerMove(playerChoice);
-    let computerMove = getComputerMove();
+    const playerMove = playerChoice;
+    const computerMove = getComputerMove();
     displayResult(computerMove, playerMove);
 }
 
-//player input
-function getPlayerMove(playerChoice){
-    let playerMove = 'Nieznany ruch';
-
-    if (playerChoice == 'rock') {
-        playerMove = 'kamień';
-    } 
-    else if (playerChoice == 'paper') {
-        playerMove = 'papier';
-    }
-    else if (playerChoice == 'scissors') {
-        playerMove = 'nożyce';
-    }
-    else {
-        printMessage (playerMove + '!');
-    }
-    return playerMove;
-}
 //computer move
 function getComputerMove (){
     let randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -76,13 +58,13 @@ function displayResult (computerMove, playerMove){
 }
 
 document.getElementById('rock').addEventListener('click', function () {
-    playGame('rock');
+    playGame('kamień');
 });
 
 document.getElementById('paper').addEventListener('click', function () {
-    playGame('paper'); 
+    playGame('papier'); 
 });
 
 document.getElementById('scissors').addEventListener('click', function () {
-    playGame('scissors'); 
+    playGame('nożyce'); 
 });
